@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+        <!-- label,input etc are inline elements whereas div, p etc are block elements -->
+        <!-- The for attribute(property) of the label tag should be equal to the id attribute of the input tag to bind them together -->
+      <label for="firstname">First Name</label> 
+      <input type="text" id="firstname" name="firstName"/>
+      <br>
+      <label for="lastname">Last Name</label>
+      <input type="text" id="lastname" name="lastName"/>
+      <br>
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age"/>
+      <br>
+      <label for="date">Enter DOB</label>
+      <input type="date" id="date" name="date"/>
+      <br>
+      <label for="password">Enter Password</label>
+      <input type="password" id="password" name="DOB"/>
+      <br>
+      <p>Enter Tshirt size</p>
+      <!-- To group all radiobuttons give them same name attribute  -->
+      <input type="radio" name="tshirtsize" id="small" value="small">
+      <label for="small">Small</label>
+      <input type="radio" name="tshirtsize" id="medium" value="medium">
+      <label for="medium">Medium</label>
+      <input type="radio" name="tshirtsize" id="large" value="large">
+      <label for="large">Large</label>
+      <br>
+      <!-- On clicking reset button the details entered in the input fields will get empty -->
+      <input type="reset">
+      <br>  
+      <input type="submit">  
+    </form>
+  </body>
+</html>
