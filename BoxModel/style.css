@@ -1,0 +1,16 @@
+/* * is known as the universal selector */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: limegreen;
+    border: 20px solid green;
+    padding: 30px;  
+    /* padding ka kaam hai content ko border se alag karna */
+    margin: 40px;
+    /* margin ka kaam hai ek element ko dusre element se alag karna */
+}
