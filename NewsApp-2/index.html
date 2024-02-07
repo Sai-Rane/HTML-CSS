@@ -30,81 +30,30 @@
     </nav>
 
     <main>
-      <div class="cards-container container flex">
-        <div class="card">
-          <div class="card-header">
-            <img
-              src="https://via.placeholder.com/400x200"
-              alt="news-image"
-              id="news-img"
-            />
-          </div>
-          <div class="card-content">
-            <h3 id="news-title">This is the title</h3>
-            <h6 class="news-source" id="news-source">End Gadget</h6>
-            <p class="news-desc" id="news-desc">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
-              deleniti sed ad vero! Cum tempore reprehenderit aut repellendus
-              earum inventore!
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
-            <img
-              src="https://via.placeholder.com/400x200"
-              alt="news-image"
-              id="news-img"
-            />
-          </div>
-          <div class="card-content">
-            <h3 id="news-title">This is the title</h3>
-            <h6 class="news-source" id="news-source">End Gadget</h6>
-            <p class="news-desc" id="news-desc">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
-              deleniti sed ad vero! Cum tempore reprehenderit aut repellendus
-              earum inventore!
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
-            <img
-              src="https://via.placeholder.com/400x200"
-              alt="news-image"
-              id="news-img"
-            />
-          </div>
-          <div class="card-content">
-            <h3 id="news-title">This is the title</h3>
-            <h6 class="news-source" id="news-source">End Gadget</h6>
-            <p class="news-desc" id="news-desc">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
-              deleniti sed ad vero! Cum tempore reprehenderit aut repellendus
-              earum inventore!
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
-            <img
-              src="https://via.placeholder.com/400x200"
-              alt="news-image"
-              id="news-img"
-            />
-          </div>
-          <div class="card-content">
-            <h3 id="news-title">This is the title</h3>
-            <h6 class="news-source" id="news-source">End Gadget</h6>
-            <p class="news-desc" id="news-desc">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
-              deleniti sed ad vero! Cum tempore reprehenderit aut repellendus
-              earum inventore!
-            </p>
-          </div>
-        </div>
-      </div>
+      <div class="cards-container container flex" id="cards-container"></div>
     </main>
+
+    <!-- since we want to show multiple cards we use template.The <template> tag is used as a container to hold some HTML content hidden from the user when the page loads. The content inside <template> can be rendered later with a JavaScript. -->
+    <template id="template-news-card">
+      <div class="card">
+        <div class="card-header">
+          <img
+            src="https://via.placeholder.com/400x200"
+            alt="news-image"
+            id="news-img"
+          />
+        </div>
+        <div class="card-content">
+          <h3 id="news-title">This is the title</h3>
+          <h6 class="news-source" id="news-source">End Gadget</h6>
+          <p class="news-desc" id="news-desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
+            deleniti sed ad vero! Cum tempore reprehenderit aut repellendus
+            earum inventore!
+          </p>
+        </div>
+      </div></template
+    >
     <script src="script.js"></script>
   </body>
 </html>
