@@ -4,7 +4,8 @@ const url = "https://newsapi.org/v2/everything?q=";
 //jab window load ho tab callback chalega
 window.addEventListener("load", function () {
   console.log("load");
-  fetchNews("India");
+  //   fetchNews("India");
+  fetchNews("IPL");
 });
 
 async function fetchNews(query) {
@@ -39,7 +40,7 @@ function fillDataInCard(cardClone, article) {
   const newsSource = cardClone.querySelector("#news-source");
   const newsDesc = cardClone.querySelector("#news-desc");
 
-  newsImg.src = article.urltoImage;
+  newsImg.src = article.urlToImage;
   newsTitle.innerHTML = article.title;
   newsDesc.innerHTML = article.description;
 
@@ -47,4 +48,36 @@ function fillDataInCard(cardClone, article) {
     timeZone: "Asia/Jakarta",
   });
   newsSource.innerHTML = `${article.source.name} . ${date}`;
+
+  //logic to redirect to news when user clicks on news image
+  cardClone.firstElementChild.addEventListener("click", () => {
+    window.open(article.url, "_blank");
+  });
+}
+
+let currentSelectedNav = null;
+
+function onNavItemClick(id) {
+  fetchNews(id);
+  const navItem = document.getElementById(id);
+  currentSelectedNav?.classList?.remove("active");
+  currentSelectedNav = navItem;
+  currentSelectedNav.classList.add("active");
+}
+
+const searchButton = document.getElementById("search-button");
+const searchText = document.getElementById("search-text");
+
+searchButton.addEventListener("click", () => {
+  console.log("click");
+  const query = searchText.value;
+  console.log("query", query);
+  if (!query) return;
+  fetchNews(query);
+  currentSelectedNav?.classList?.remove("active");
+  currentSelectedNav = null;
+});
+
+function reload() {
+  window.location.reload(); //on clicking of image go back to home page
 }
