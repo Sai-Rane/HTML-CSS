@@ -1,0 +1,8 @@
+.container{
+    width: 400px;
+    height: 400px;
+    border: 2px solid red;
+    /*overflow: scroll; */  /* scrollbar will be applied to the container, no matter the size of content */
+    /* if you want scroll bar only when the content goes out of the container then use overflow as auto */
+    overflow: auto;
+}

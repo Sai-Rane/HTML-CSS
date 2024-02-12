@@ -1,0 +1,21 @@
+.container{
+    border: 2px solid red;
+    /*overflow: scroll; */  /* scrollbar will be applied to the container, no matter the size of content */
+    /* if you want scroll bar only when the content goes out of the container then use overflow as auto */
+}
+
+.img-1{
+float: right;
+}
+
+.p1{
+border: 2px solid green;
+}
+
+.img-2{
+float: left;
+}
+
+.p2{
+
+}
