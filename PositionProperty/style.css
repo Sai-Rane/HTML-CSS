@@ -1,0 +1,29 @@
+.container{
+    height: 300px;
+    width: 300px;
+    background-color: gainsboro;
+    margin: 100px;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: gainsboro;
+}
+
+.red{
+    background-color: red;
+    position: relative;  /* relative to the parent.. In this case the parent is the container class (top,right,bottom and left). Either you can give top or bottom and left or right */
+    top: 50px;  /*top se 50px down aayega. You can also give negative values such as top: ;:-50px*/
+    /* left: 50px; */
+    left: 100px;
+    /* To bring the red color box in middle of the conatiner give top as 100px and left as 100px */
+}
+
+.blue{
+    background-color: blue;
+}
+
+.green{
+    background-color: green;
+}
