@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- https://www.youtube.com/watch?v=Yixrwpt7e-g -->
+    <!-- As of today there are 2 ways to handle evenets in JS. By using event handler and By adding event listener -->
+    <!-- Example of event are: When user clicks on button,Web page loading, A form field being changed etc. -->
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="box" id="box-1" onclick="myFunction()">box-1</div>
+      <div class="box" id="box-2" onmouseover="mouseOver()">box-2</div>
+      <div class="box" id="box-3">box-3</div>
+      <div class="box" id="box-4">box-4</div>
+    </div>
+
+    <form action="#">
+      <input
+        type="text"
+        id="nameInput"
+        onkeypress="keypress()"
+        onkeyup="keyup()"
+        onkeydown="keydown()"
+      />
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>

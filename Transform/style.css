@@ -1,0 +1,40 @@
+.container{
+    width: 400px;
+    height: 400px;
+    background-color: aqua;
+    margin: 80px auto;
+}
+
+.box{
+width: 200px;
+height: 200px;
+background-color:chartreuse;
+font-size: 4rem;
+display: flex;
+justify-content: center;
+align-items: center;
+/* transform: scale(0.5);  x and y direction mai 0.5 times increase hoga */
+/* transform: scale(2,1.5); x direction mai 2 times grow hoga and y direction mai 1.5 times */
+/* scale is used to scale a particular div i.e make it small or large in x or y direction */
+/* default value of scale is 1 */
+/* transform: scaleX(2);   */
+/* transform: scaleX(0.5) scaleY(0.5);   */
+
+/* translate 20px in x direction and 40px in y direction */
+/* transform: translate(20px,40px);  */
+/* transform: translate(50%,50%);  */
+
+/* rotate is used to rotate a particular element */
+transform: rotate(20deg);
+}
+
+.box2{
+    width: 200px;
+    height: 200px;
+    background-color:chartreuse;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: skew(20deg);
+}

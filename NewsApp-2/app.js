@@ -50,6 +50,12 @@ let fruit = "banana";
 
 // console.log(a);
 // console.log(b);
-// console.log(c);
+// console.log(c);  //30
 
 // let and const are block scope
+
+if ([]) {
+  console.log(true);
+} else {
+  console.log(false);
+}
