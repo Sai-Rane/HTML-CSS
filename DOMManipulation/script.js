@@ -29,7 +29,7 @@ box1.classList.add("round-border");
 
 box1.classList.remove("box");
 
-//Creating and Appending element
+// Creating and Appending element
 // We can create element using the createElement() method of document. We can append this new Element(node) inside any other element
 
 const newParagraph = document.createElement("p");
