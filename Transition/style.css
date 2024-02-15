@@ -8,6 +8,11 @@
     transition-duration: 1s;
     transition-property: all;
     transition-delay: 0.5s;  /*this means hover karne ke 0.5sec baad transition start hoga*/
+    /* transition-timing-function: ease-in;  transition effect with a slow start */
+    /* transition-timing-function: ease-out; */   /* transition effect with a slow end*/
+    /* transition-timing-function: linear; */   /* transition effect with same spped from start to end*/
+    /* cubic-bezier(n,n,n,n)-lets you define your own values in a cubic-bezier */
+    transition-timing-function: cubic-bezier(0.74,-0.31,0.6,3.22);
 }
 
 .box:hover{
