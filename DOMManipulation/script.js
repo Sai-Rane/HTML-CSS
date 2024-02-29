@@ -6,10 +6,10 @@ const box2 = document.getElementById("box-2");
 console.log(box2);
 
 const divs = document.getElementsByTagName("div");
-console.log(divs);
+console.log(divs); //this returns HTMLCollection
 
 const boxes = document.getElementsByClassName("box");
-console.log("boxes", boxes);
+console.log("boxes", boxes); //this returns a HTMLCollection
 
 const random = document.querySelector(".container .box");
 console.log("random", random);
